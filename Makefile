@@ -1,16 +1,26 @@
-CC = gcc
+AR9300 := ar9300_eeprom
+SRCDIR := src
+INC := include
+BUILDDIR := build
 
-all : ar9300_eeprom
+BINAR9300 := bin/$(AR9300)
+SRCAR9300 := $(shell find $(SRCDIR) -type f -name "*.c")
+OBJAR9300 := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SRCAR9300:.c=.o))
 
-DEF_INC = include/ar9300_eeprom.h include/eeprom.h include/types.h include/ar9003_eeprom.h
+LDFLAGS=
+CFLAGS=-c -O2 -I/lib/modules/`uname -r`/build/include
+CC=gcc
 
-ar9300_eeprom : CFLAGS = -Wall -O2 -I./include
-ar9300_eeprom : LDLIBS =
-ar9300_eeprom : ar9300_eeprom.o detect_eeprom.o dump_eeprom.o io_eeproms.o
-ar9300_eeprom.o : ar9300_eeprom.c $(DEF_INC) include/wdr4300.h
-detect_eeprom.o : detect_eeprom.c $(DEF_INC)
-dump_eeprom.o : dump_eeprom.c $(DEF_INC)
-io_eeproms.o : io_eeproms.c $(DEF_INC)
+all : $(AR9300)
 
-clean :
-	rm -rf *.o ar9300_eeprom
+$(AR9300): $(SRCAR9300) $(BINAR9300)
+
+$(BINAR9300): $(OBJAR9300)
+	$(CC) $(LDFLAGS) $(OBJAR9300) -o $@
+
+$(BUILDDIR)/%.o: $(SRCDIR)/%.c
+	@mkdir -p $(BUILDDIR)
+	$(CC) $(CFLAGS) -I $(INC) $< -o $@
+
+clean:
+	rm -r $(BUILDDIR) $(BINAR9300)
