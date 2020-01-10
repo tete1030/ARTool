@@ -1,0 +1,18 @@
+art-radio/AR9344-Tested_on_WDR4300/2.4-20dbm-5-17dbm-art-ar9344-ar9580 (3).bin
+art-radio/AR9344-Tested_on_WDR4300/2.4-20dbm-5-23dbm-art-ar9344-ar9580 (2).bin
+art-radio/AR9344-Tested_on_WDR4300/2.4-20dbm-5-24dbm-art-ar9344-ar9580.bin
+art-radio/AR9344-Tested_on_WDR4300/2.4-22dbm-5-20dbm-art-ar9344-ar9580 (4).bin
+art-radio/AR9344-Tested_on_WDR4300/2.4-22dbm-5-22dbm-art-ar9344-ar9580 (8).bin
+art-radio/AR9344-Tested_on_WDR4300/2.4-24dbm-5-23dbm-art-ar9344-ar9580 (6).bin
+art-radio/AR9344-Tested_on_WDR4300/2.4-24dbm-5-24dbm-art-ar9344-ar9580 (7).bin
+art-radio/AR9344-Tested_on_WDR4300/FAIL-to-Flash-art-ar9344-ar9580 (5).bin
+
+calibrated-art-collection/AR9344-AR9580/tl-wdr4310_v1.0_cn_2050500271_rev1.3.zeptozb.bin
+
+calibrated-art-collection/AR9344-AR9580/tl-wdr4300.gwlim.bin
+calibrated-art-collection/AR9344-AR9580/TL-WDR4300_v1.eduperez.bin
+calibrated-art-collection/AR9344-AR9580/tl-wdr4300_v1.portax.bin
+calibrated-art-collection/AR9344-AR9580/TL-WDR4300_v1.AndyX.bin
+
+calibrated-art-collection/AR9344/ar9344.hackpascal.bin
+calibrated-art-collection/AR9344/cpe210_v1.viisauksena.bin

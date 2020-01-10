@@ -1,0 +1,6 @@
+[submodule "repos/art-radio"]
+	path = repos/art-radio
+	url = https://github.com/gwlim/art-radio
+[submodule "repos/calibrated-art-collection"]
+	path = repos/calibrated-art-collection
+	url = https://github.com/bkil/calibrated-art-collection
